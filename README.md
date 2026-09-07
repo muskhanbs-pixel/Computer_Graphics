@@ -44,6 +44,8 @@ Computer_Graphics/
 │       └── Polygon_Clipping.png
 │
 └── README.md
+
+```text
 ## Output Screenshots
 
 ### DDA Line Drawing Algorithm
