@@ -8,6 +8,7 @@ HEIGHT = 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Midpoint Circle Algorithm")
 
+
 # Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -15,10 +16,16 @@ GRAY = (210, 210, 210)
 BLUE = (0, 100, 255)
 RED = (255, 0, 0)
 
+
 # Graph settings
 scale = 40
 origin_x = 450
 origin_y = 350
+
+
+# Font for title and axis labels
+font = pygame.font.SysFont(None, 32)
+axis_font = pygame.font.SysFont(None, 24)
 
 
 def draw_graph():
@@ -50,6 +57,14 @@ def draw_graph():
         (origin_x, 0),
         (origin_x, HEIGHT), 2
     )
+
+    # X-axis label
+    x_label = axis_font.render("X", True, BLACK)
+    screen.blit(x_label, (WIDTH - 30, origin_y + 10))
+
+    # Y-axis label
+    y_label = axis_font.render("Y", True, BLACK)
+    screen.blit(y_label, (origin_x + 10, 10))
 
 
 def graph_to_screen(x, y):
@@ -87,6 +102,7 @@ def midpoint_circle(cx, cy, radius):
 
         if p < 0:
             p = p + 2 * x + 1
+
         else:
             y -= 1
             p = p + 2 * (x - y) + 1
@@ -109,6 +125,18 @@ while running:
     screen.fill(WHITE)
 
     draw_graph()
+
+    # Title
+    title = font.render(
+        "Midpoint Circle Drawing Algorithm",
+        True,
+        BLACK
+    )
+
+    screen.blit(
+        title,
+        (WIDTH // 2 - title.get_width() // 2, 20)
+    )
 
     # Draw points
     for x, y in points:
