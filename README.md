@@ -1,7 +1,6 @@
 # Computer Graphics Algorithms
 
-This repository contains implementations of fundamental Computer Graphics
-algorithms using Python.
+This repository contains implementations of fundamental Computer Graphics algorithms using Python.
 
 ## Algorithms Implemented
 
@@ -44,34 +43,17 @@ Computer_Graphics/
 │       └── Polygon_Clipping.png
 │
 └── README.md
+Output Screenshots
+DDA Line Drawing Algorithm
 
-```text
-## Output Screenshots
+Bresenham's Line Drawing Algorithm
 
-### DDA Line Drawing Algorithm
+Midpoint Circle Drawing Algorithm
 
-![DDA](Algorithms/Output/DDA.png)
+Midpoint Ellipse Drawing Algorithm
 
-### Bresenham's Line Drawing Algorithm
+Polygon Filling
 
-![Bresenham](Algorithms/Output/Bresenham.png)
+Line Clipping
 
-### Midpoint Circle Drawing Algorithm
-
-![Midpoint Circle](Algorithms/Output/Midpoint_Circle.png)
-
-### Midpoint Ellipse Drawing Algorithm
-
-![Midpoint Ellipse](Algorithms/Output/Midpoint_Ellipse.png)
-
-### Polygon Filling
-
-![Polygon Filling](Algorithms/Output/Polygon_Filling.png)
-
-### Line Clipping
-
-![Line Clipping](Algorithms/Output/Line_Clipping.png)
-
-### Polygon Clipping
-
-![Polygon Clipping](Algorithms/Output/Polygon_Clipping.png)
+Polygon Clipping
